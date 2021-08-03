@@ -1,0 +1,104 @@
+# Settings
+languageCode = "it-it"
+title = "borto"
+theme = "autophugo"
+#googleAnalytics = ""
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[Author]
+    name = "Andrea Bortolotti"
+    email = "bort0x@tuta.io"
+
+[params]
+    # Meta
+    description = "Andrea Bortolotti's portfolio. Some of the best photos i took in the last years"
+    keywords = "photos, photo, foto, galleria, londra, viaggi"
+    #msvalidate = ""
+    #googlesiteverification = ""
+    thumb_width = 720
+    thumb_quality = 80
+    full_width = 960
+    full_quality = 90
+    column_count = 2
+    filename_as_phototitle = false
+    
+    # Headerbar links
+    # Do not put here too many links,
+    # it will break mobile appearance
+
+    [[params.header.links]]
+    name = "Su di me"
+    url = "#footer"
+    icon = "fa-info-circle"    
+    
+    # Footer panel
+    
+    [params.footer.paragraph]
+    headline = "Galleria Foto"
+    text = "Ciao! Sono Andrea Bortolotti, un ragazzo di 16 anni, un coglione qualunque. La fotografia mi ha sempre interessato, ed ho avuto numerose fotocamere compatte, sin dalle elementari. Grazie alle foto posso lasciare dei ricordi a me ed ai miei amici del passato."
+    
+    [params.footer.social]
+    headline = "Collegamenti"
+
+    [[params.footer.social.links]]
+    label = "Email"
+    url = "bort0x@tuta.io"
+    icon = "fa-envelope"
+    
+    [[params.footer.social.links]]
+    label = "Sito web"
+    url = "https://bortox.it"
+    icon = "fa-globe"
+    
+    [[params.footer.social.links]]
+    label = "Compiti"
+    url = "https://bortox.it/Compiti-scolastici/"
+    icon = "fa-book"
+    
+    [[params.footer.social.links]]
+    label = "Instagram"
+    url = "https://instagram.com/borto.jpg"
+    icon = "fa-instagram"
+
+    [[params.footer.social.links]]
+    label = "Github"
+    url = "https://github.com/bortox"
+    icon = "fa-github"
+    
+    # Contact form
+    
+    # Since this template is static, the contact form uses www.formspree.io as a
+    # proxy. The form makes a POST request to their servers to send the actual
+    # email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'formspreeEndpoint' below
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+    
+    [params.footer.contact]
+    hide = false # Set this to true if you don't want to have a contact form on your site
+    formspreeEndpoint = "mdoyaazp"
+    headline = "Contattami"
+    buttonText = "Invia"
+    resetText = "Reset"
+    
+    # 'warning' defines error messages for invalid inputs
+    [params.footer.contact.name]
+    text = "Nome *"
+    warning = "Please, enter your name"
+
+    [params.footer.contact.email]
+    text = "Email *"
+    warning = "Please, enter your email."
+
+    [params.footer.contact.message]
+    text = "Messaggio *"
+    warning = "Please, enter your message"
+    
+    # Copyright
+    [params.footer.copyright]
+    name = "Andrea Bortolotti"

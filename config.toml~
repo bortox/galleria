@@ -1,0 +1,6 @@
+baseURL = "https://bortox.it/galleria"
+languageCode = "it-it"
+title = "Galleria foto di Andrea Bortolotti"
+theme = "autophugo"
+RelativeURLs=true
+CanonifyURLs=true
