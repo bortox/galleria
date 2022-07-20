@@ -41,7 +41,7 @@
         {{- if not $image }}
             {{- errorf (printf "When processing '%s', no thumbnail image found for: %s" $.Page.File.Path $title) }}
         {{- else }}
-            {{- $thumb := $image.Resize $thumb_size }}
+            {{- $thumb := $image.Resize "$thumb_size webp" }}
             {{- $new_sect := dict "type" "sect" "title" $title "link" $link "thumb" $thumb }}
 
             {{- $sections := $.Scratch.Get "sections" }}
