@@ -10,8 +10,8 @@
     {{- $filename_as_phototitle := default false ($.Param "filename_as_phototitle") }}
     {{- $downloadable := default true ($.Param "images_downloadable") }}
 
-    {{- $thumb_size := printf "%dx q%d" $thumb_width $thumb_quality }}
-    {{- $full_size := printf "%dx q%d" $full_width $full_quality }}
+    {{- $thumb_size := printf "%dx q%d webp" $thumb_width $thumb_quality }}
+    {{- $full_size := printf "%dx q%d webp" $full_width $full_quality }}
 
     {{- /* Build the list of sections and thumbnails */}}
     {{- $.Scratch.Set "sections" (slice) }}
@@ -41,7 +41,7 @@
         {{- if not $image }}
             {{- errorf (printf "When processing '%s', no thumbnail image found for: %s" $.Page.File.Path $title) }}
         {{- else }}
-            {{- $thumb := $image.Resize "$thumb_size webp" }}
+            {{- $thumb := $image.Resize "$thumb_size" }}
             {{- $new_sect := dict "type" "sect" "title" $title "link" $link "thumb" $thumb }}
 
             {{- $sections := $.Scratch.Get "sections" }}
