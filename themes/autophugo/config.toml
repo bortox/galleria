@@ -16,9 +16,9 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
     #msvalidate = ""
     #googlesiteverification = ""
     thumb_width = 720
-    thumb_quality = "70 webp"
+    thumb_quality = "70"
     full_width = 960
-    full_quality = "90 webp"
+    full_quality = "90"
     column_count = 2
     filename_as_phototitle = false
     
