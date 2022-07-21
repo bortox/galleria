@@ -15,10 +15,10 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
     keywords = "photos, photo, foto, galleria, londra, viaggi"
     #msvalidate = ""
     #googlesiteverification = ""
-    thumb_width = "webp 720"
-    thumb_quality = 70
-    full_width = "webp 960"
-    full_quality = 90
+    thumb_width = 720
+    thumb_quality = "70 webp"
+    full_width = 960
+    full_quality = "90 webp"
     column_count = 2
     filename_as_phototitle = false
     
